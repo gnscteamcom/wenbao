@@ -1,0 +1,1 @@
+<option value="3">钱币</option><option value="21">&nbsp;├古钱币</option><option value="66">&nbsp;├纸币</option><option value="67">&nbsp;├花钱</option><option value="68">&nbsp;├机制币</option><option value="69">&nbsp;├金银锭</option><option value="70">&nbsp;└其他</option><option value="15">瓷器及其他</option></select>
