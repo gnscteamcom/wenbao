@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>拍卖规则_文宝在线拍卖网</title>
+<link href="http://www.wenbaozaixian.com/skin/default/image/wenbao/zc_style.css" type="text/css" rel="stylesheet"/>
+<LINK rel=stylesheet type=text/css href="http://www.wenbaozaixian.com/skin/default/image/wenbao/main_index.css">
+<link href="http://www.wenbaozaixian.com/skin/default/image/wenbao/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="http://www.wenbaozaixian.com/skin/default/ie6.css"/>
+<![endif]-->
+<script type="text/javascript">window.onerror=function(){return true;}</script><script type="text/javascript" src="http://www.wenbaozaixian.com/lang/zh-cn/lang.js"></script>
+<script type="text/javascript" src="http://www.wenbaozaixian.com/file/script/config.js"></script>
+<script type="text/javascript" src="http://www.wenbaozaixian.com/file/script/jquery.js"></script>
+<script type="text/javascript" src="http://www.wenbaozaixian.com/file/script/common.js"></script>
+<script type="text/javascript" src="http://www.wenbaozaixian.com/file/script/page.js"></script>
+<script type="text/javascript" src="http://www.wenbaozaixian.com/file/script/jquery.lazyload.js"></script><script type="text/javascript">
+var searchid = 23;
+</script>
+<!--<script type="text/javascript" src="http://www.wenbaozaixian.com/skin/default/image/wenbao/jquery.js"></script>-->
+<script type=text/javascript><!--//--><![CDATA[//><!--
+function menuFix() {
+ var sfEls = document.getElementById("nav").getElementsByTagName("li");
+ for (var i=0; i<sfEls.length; i++) {
+  sfEls[i].onmouseover=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onMouseDown=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onMouseUp=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onmouseout=function() {
+  this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+"");
+  }
+ }
+}
+window.onload=menuFix;
+//--><!]]></script>
+<script type="text/javascript">
+function setHomepage(){
+ if (document.all){
+        document.body.style.behavior='url(#default#homepage)';
+  document.body.setHomePage('http://www.wenbaozaixian.com/');
+    }
+    else if (window.sidebar){
+if(window.netscape){
+ try{ 
+netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+ } 
+ catch (e){ 
+alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" ); 
+ }
+}
+var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+prefs.setCharPref('browser.startup.homepage','http://www.wenbaozaixian.com/');
+ }
+}
+</script>
+<SCRIPT type=text/javascript>window.onerror=function(){return true;}</SCRIPT>
+</head>
+<body>
+<div class="wb_top">
+<ul>
+<li class="top_left"><span class="f_b" title="总管理员">嘉客</span> <a href="http://www.wenbaozaixian.com/member/line.php" title="隐身，点击上线"><img src="http://www.wenbaozaixian.com/skin/default/image/user_offline.png" width="10" height="10" align="absmiddle"/></a> | <a href="http://www.wenbaozaixian.com/member/">商务中心</a> | <a href="http://www.wenbaozaixian.com/member/message.php">站内信(<span class="head_t" id="destoon_message">0</span>)</a> | <a href="http://www.wenbaozaixian.com/member/chat.php">新对话(<span class="head_t" id="destoon_chat">0</span>)</a> | <a href="http://www.wenbaozaixian.com/member/logout.php">退出</a></li>
+<li class="top_right"><script type="text/javascript">addFav('收藏本页');</script> | <a href="javascript:setHomepage();">设为首页</a></li>
+</ul>
+</div>
+<!--wb_top over--><div class="m head_s" id="destoon_space" style="display:none"></div>
+<div class="pag_head">
+<div class="pag_logo"><img src="/file/upload/201404/21/14-09-14-89-1.jpg" alt="文宝在线拍卖网" style=" margin-top:13px"/></div>
+<div id="search_module" style="display:none; margin-left:573px;" onmouseout="Dh('search_module');" onmouseover="Ds('search_module');">
+<a href="javascript:void(0);" onclick="setModule1('11','瓷器及其他')">瓷器及其他</a><a href="javascript:void(0);" onclick="setModule1('10','会员区')">会员区</a><a href="javascript:void(0);" onclick="setModule1('9','加盟方区')">加盟方区</a><a href="javascript:void(0);" onclick="setModule1('8','官方区')">官方区</a><a href="javascript:void(0);" onclick="setModule1('4','钱币')">钱币</a></div>
+
+<div class="pag_select">
+  <form id="destoon_search" action="http://www.wenbaozaixian.com/auction/search.php" onsubmit="return Dsearch(1);">
+  <input type="hidden" name="catid" value="4" id="destoon_moduleid"/>
+  <input type="hidden" name="spread" value="0" id="destoon_spread"/>
+<INPUT name="kw" type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词') this.value='';" onkeyup="STip(this.value);" autocomplete="off" id="select_text">
+<input type="text" onclick="$('#search_module').fadeIn('fast');" onfocus="this.blur();" readonly="" value="分类" class="search_m" id="destoon_select"  style="width:52px; line-height:28px; padding:0px; margin:0px; height:28px; border:2px solid #835502; border-left:none; background:url(../../skin/default/image/ico_arrow_d.gif) no-repeat 90% center; float:left">
+<input name="" type="submit" value="搜索" id="button" /></form>
+<p><strong style="color:#6d4629;">热门搜索：</strong><a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E9%92%B1%E5%B8%81" class="b" rel="nofollow">钱币</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E6%B5%8B%E8%AF%95" class="b" rel="nofollow">测试</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E9%A1%BA%E6%B2%BB%E9%80%9A%E5%AE%9D" class="b" rel="nofollow">顺治通宝</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E9%87%91%E9%93%B6%E5%B8%81" class="b" rel="nofollow">金银币</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E7%93%B7%E6%9D%82" class="b" rel="nofollow">瓷杂</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E9%87%91%E9%93%B6%E9%93%9C%E5%99%A8" class="b" rel="nofollow">金银铜器</a>&nbsp; <a href="http://www.wenbaozaixian.com/auction/search.php?kw=%E4%B9%A6%E7%94%BB" class="b" rel="nofollow">书画</a>&nbsp; </p>
+</div>
+<!--pag_select over-->
+<div class="pag_icon"></div>
+<div class="clear"></div>
+</div>
+<!--pag_head over-->
+<div class="menu">
+<div class="menu_width">
+    <div class="layer_c">
+        <div class="allsort"  onmouseover="show('menu')" onmouseout="hiden('menu')">
+            <h3>全站导航</h3>
+            <div class="sort_list sort2" id="menu" style="display:none">
+                <ul>
+                    <li class="clearfix">
+                        <h4><a target="_blank" href="/auction/list.php?catid=4">钱币</a></h4>
+                    </li>
+                    <li class="bg clearfix">
+                        <h4><a target="_blank" href="/news/">钱币资讯</a></h4>
+                    </li>
+                    <li class="clearfix">
+                        <h4><a target="_blank" href="/auction/?sta=finish">已成交拍品</a></h4>
+                    </li>
+                    <li class="bg clearfix">
+                        <h4><a target="_blank" href="/auction/list.php?catid=8">官方区</a></h4>
+                    </li>
+                    <li class="clearfix">
+                        <h4><a target="_blank" href="/auction/list.php?catid=9">加盟方区</a></h4>
+                    </li>
+                    <li class="bg clearfix">
+                        <h4><a target="_blank" href="/company/search.php?new=1">会员区</a></h4>
+                    </li>
+                    <li class="clearfix">
+                        <h4><a target="_blank" href="/auction/list.php?catid=11">瓷器及其他</a></h4>
+                    </li>
+                    <li class="bg clearfix">
+                        <h4><a target="_blank" href="http://www.wenbaozaixian.com/about/8.html">拍卖规则</a></h4>
+                    </li>
+                    <li class="clearfix">
+                        <h4><a target="_blank" href="http://www.wenbaozaixian.com/about/9.html">买卖须知</a></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu_bd">
+            <li><a href="http://www.wenbaozaixian.com/" >首页</a></li>
+            <li><a target="_blank" href="http://www.wenbaozaixian.com/auction/?sta=soon"  title="钱币">即将截标拍品</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/auction/list.php?catid=8"  title="官方专场">官方区</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/auction/list.php?catid=9"  title="加盟方专场">加盟方区</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/auction/list.php?catid=10"  title="第三方拍品">会员区</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/auction/list.php?catid=11"  title="瓷器及其他">瓷器及其他</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/about/8.html"  title="拍卖规则">拍卖规则</a></li>
+            <li><a  target="_blank" href="http://www.wenbaozaixian.com/about/9.html"  title="买卖须知">买卖须知</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(  function(){});
+function show(a)
+{
+     var dom=$("#"+a);
+     dom.show();
+}
+function hiden(b)
+{
+     var dom=$("#"+b);
+     dom.hide();
+}
+</script>
+<!--menu over--><link rel="stylesheet" type="text/css" href="http://www.wenbaozaixian.com/skin/default/stylee.css"/> 
+<div class="m">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" class="left_menu">
+<ul>
+<li class="left_menu_li"><a href="http://www.wenbaozaixian.com/">网站首页</a></li>
+<li class="left_menu_li" id="webpage_8"><a href="http://www.wenbaozaixian.com/about/8.html">拍卖规则</a></li>
+</ul>
+</td>
+<td valign="top">
+<div class="left_box">
+<div class="pos">当前位置: <a href="http://www.wenbaozaixian.com/">首页</a> &raquo; <a href="http://www.wenbaozaixian.com/about/8.html">拍卖规则</a></div>
+<div style="border-bottom:#C0C0C0 1px dotted;margin:5px 15px 5px 15px;line-height:36px;" class="t_c px14"><strong>拍卖规则</strong></div>
+<div class="content" id="content"><div align="center"><span style="color: #cc6600"><span style="font-size: 18px"><strong><span style="font-family: 黑体"><span><span><span>竞拍规则与服务条款</span></span></span></span></strong></span></span></div>
+<div align="center"><span style="color: #cc6600"><strong><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第一章&nbsp;总则</span></span></span></strong></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第一条&nbsp;适用范围</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）本规则由文宝在线拍卖网依据相关法律、法规制定，适用于在文宝在线拍卖网进行收藏品竞拍交易活动的所有委托人、竞买人和买受人；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）所有人在参与收藏品竞拍交易前请务必仔细阅读本规则及各项条款，由于未仔细阅读并理解条款内容而引发的任何损失或责任均由行为人自行承担。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第二条&nbsp;名词解释</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）网站：文宝在线拍卖网；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）委托人：文宝在线拍卖网提供拍品的客户，即出品人（包括<span>:官方拍品委托人、加盟方拍品委托人、第三方拍品委托人）；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）竞买人：参加文宝在线拍卖网络竞拍的认证会员，即参拍人；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）买受人：竞买人竞买成功之后，即成为拍项的买受人；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（五）限时竞拍：文宝在线拍卖网提供的网络竞价平台，拍项图片发布后至开拍前为预展期，预展期间加价有效，开拍后进入倒计时，最后价高者拍得。</span></span></span></span></div>
+<div align="center"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px"><br />
+</span></span></span><strong><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第二章&nbsp;委托送拍</span></span></span></strong></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第三条&nbsp;送拍确认</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）送拍前委托人要做好卖家实名认证等相关工作，然后将拍品照片上传网站，经网站专业委员会审核通过后，即进入预展期；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）网站对拍品是否上拍拥有完全自主的决定权；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）委托人应对所送拍品拥有绝对的所有权或合法的处分权，上拍后若因拍项归属问题产生纠纷，由此对买受人和文宝在线拍卖网造成的损失及产生的一切费用由委托人承担；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）委托人送拍确认后，即自动授权并同意文宝在线拍卖网对该拍项制作照片、图示、文字说明或其他形式的影像、书籍制品，并依法享有上述制品的著作权。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第四条&nbsp;上拍</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）委托人应尊重网站做出的上拍安排，如有要求需在送拍时说明，上拍后委托人不得要求更改拍品；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）起拍价委托人可授权网站设定，或自行设定，起拍价不能高于同期市场价的<span>70%，原则上采用无底价方式，公司不接受起拍价以外的保留价。委托人自行设定起拍价过高的情况，公司将与协商，或拒绝拍品上拍；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）委托人须保证所上传的拍品包老包真，并尽其所知提供拍品真实信息（包括瑕疵等），若为赝品应接受网站拍卖结算后的退货追索，没有时间限制；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）上拍后文宝在线拍卖网有权随时对拍项真伪、瑕疵等进行复核，若发现瑕疵则通过文字或图片方式注明，在检验真伪、瑕疵过程中不排除使用对真品或真实锈色、包浆不产生损坏的化学试剂（如丙酮等），若因伪锈、修补等原因对拍项品相造成改变或损坏的，文宝在线拍卖网不承担任何责任。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第五条&nbsp;撤拍</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）竞拍开始前委托人可要求文宝在线拍卖网对其拍项撤拍，拍项的图片制作、展示等费用由委托人承担，开拍后委托人不得以任何理由要求撤拍或线下交易；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）对上拍后的拍项，出现下列情形之一的，文宝在线拍卖网有权利随时撤拍：</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(1)对拍项真伪或归属产生怀疑；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(2)新发现拍项有品相瑕疵；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(3)其他合理的撤拍原因。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第六条&nbsp;委托人成交结算及收费</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）拍品成交后以该拍项所在场次全部结标之日起，15<span>个工作日后进入结算流程；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）若因买受人延迟付款，则以实际付款日期起，<span>7个工作日后进入结算流程；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）委托人手续费（佣金）： </span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">买卖双方佣金各收取成交额的<span>3.5%，最低收取5元，一个拍品的单笔佣金上限为买卖双方各3000元。</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第七条&nbsp;弃拍的情况</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）买受人无故弃拍的拍项，根据委托人意愿可选择再次上拍；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）买受人因委托人有意或无意隐瞒瑕疵而弃拍的拍项，委托人可选择再次上拍，但需同意文宝在线拍卖网如实注明瑕疵。</span></span></span></span></div>
+<div align="center"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px"><br />
+</span></span></span><strong><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第三章&nbsp;参与竞拍</span></span></span></strong></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第八条&nbsp;参拍资格与竞拍额度</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）凡在文宝在线拍卖网注册的会员，通过以下方式可获得参拍资格：</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">&nbsp;<span>&nbsp;&nbsp; </span>交纳一定金额的参拍保证金，竞买人保证金最低<span>100元，以1：50的比例冻结。</span>且不得用于抵扣拍品款项。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）竞拍额度是竞买人出价的最高限额，即竞买人当前已结标但未结款的加上正在出价的总额不得高于对应的竞拍额度，竞拍额度靠参拍保证金获得。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）竞买人在未参加任何竞标及未拖欠任何款项的情况下，保证金可以全额返还，同时取消参拍资格。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第九条&nbsp;参与竞拍</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）拍项图片发布后至开拍前为预展期，竞买人可登录文宝在线拍卖网查看图录预展，有疑问请提前向工作人员咨询；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）预展期间对拍项所做之图片展示或文字表述，文宝在线拍卖网有权在必要时做出调整或变更，对限时竞拍已提前出价的拍项，如遇信息变更，出价可视作无效，对于所有拍项，竞买人应以开拍时文字说明或图片展示为准；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）竞买人在出价前应对拍项品质、瑕疵等做出充分了解（通过图片、文字或咨询客服），一旦出价成功，即表明认可图片、文字中所包含的任何关于品质、瑕疵的信息，拍项成交后不得以此作为退货或弃拍理由；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）开拍后竞买人加价幅度应等于或高于竞价阶梯；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（五）开拍后竞买人的最高出价不得超过其对应的竞拍额度；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（六）鉴于网络竞拍的特殊性，因网络延时、竞买人对自身账号保管不善等原因造成的出价错误不得作为弃拍理由，如遇网络阻塞或网络技术等原因引起竞拍异常，文宝在线拍卖网有权根据实际情况作出相应处理，包括取消竞拍结果或推迟开拍等。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十条&nbsp;结标及售后：</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）拍品成交后，收取买受人结标价如下手续费：</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">买卖双方佣金各收取成交额的<span>3.5%，最低收取5元，佣金上限为买卖双方各3000元。</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）竞拍结束后<span>3天内为付款期，竞拍结束后7天内为交割期，请及时交割，超出交割期未完成交易的买受人不再享有相关售后服务；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）所有拍项仅限中华人民共和国大陆地区交付，文宝在线拍卖网不协助买受人办理出境事宜，根据《中华人民共和国文物保护法》之规定，不允许出境的拍项，买受人因私自携带出境而产生的一切后果由买受人承担；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（五）交割期内，文宝在线拍卖网对拍项瑕疵有担保责任，超出交割期不再承担担保责任；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（六）对于有真品担保（官方拍品）的拍项，文宝在线拍卖网承担担保责任，但必须准确提供拍项的竞拍期次和编号，以方便确认；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（七）买受人在交割期内未结清款项者，视为延期付款，超出天数每日按其未结款项之千分之一收取保管费，超出交割期<span>15天仍未结清且无正当理由者，视为无故弃拍，由此产生的一切费用由买受人承担。</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十一条&nbsp;弃拍</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）成交后买受人超过<span>30日不付款或未结清全部款项且无正当理由者，视为无故弃拍，扣除所交保证金，并追索全部手续费损失；</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）买受人付款后无充分理由要求退货者，扣除结标价<span>20%的手续费用，并降低信用等级。</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十二条&nbsp;真品担保</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）文宝在线拍卖网目前仅对古钱币类官方拍品拍项做长期真品担保（特殊说明的除外）。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）非古钱币类拍项仅作结标后七天的真品担保，逾期不再承担担保责任；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）凡标明为参考品的拍项（包括古钱币类拍项），文宝在线拍卖网不承担真品担保责任；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（四）长期真品担保的拍项若系赝品长久可退，不受交割期限制；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（五）对附有鉴定证书的拍项，担保责任以鉴定证书条款为准。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十三条&nbsp;瑕疵认定</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）文宝在线拍卖网认可的古钱币类瑕疵范围包括：</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(1)钱体外缘、内郭、地张等处有因外力或铸造引起的明显缺损，在一定拍摄角度下，通过文宝在线拍卖标准图片可以明显看出；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(2)文字出现明显断笔或缺失，在一定拍摄角度下通过文宝在线拍卖标准图片可以明显看出；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(3)钱体存在裂纹或断裂；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(4)钱体存在对缺损、裂纹的修、补加工或断裂后重接；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(5)钱体在酸、碱性溶液中浸泡或清洗过，导致包浆颜色发生明显变化或包浆缺失；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(6)钱体存在明显的不平整，通过文宝在线拍卖标准图片之侧图可以明显看出，或内郭出现明显凹、凸，在一定角度下通过图片亦可以反映，由于古代铸币工艺的限制，文宝在线拍卖网不认可将钱币置于平面来认定不平整缺陷的方法；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(7)钱币的包浆或锈色系人为后加；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(8)钱体出现明显锈蚀。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）文宝在线拍卖网对古钱币类瑕疵认定保留最终解释权。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十四条&nbsp;瑕疵担保</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）标明售出不退的拍项，文宝在线拍卖网有如实描述瑕疵的义务（通过文字或图片），但不负有担保责任；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）对图片中不能看到、亦无相关文字说明的瑕疵，同时满足以下<span>3个条件，文宝在线拍卖网负有担保责任，买受人可以退货，不扣任何费用：</span></span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(1)经文宝在线拍卖网再次确认后，确定在瑕疵范围之内，且通过图片和文字说明均不能反映；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(2)买受人对拍项的品相未作任何改变或损坏；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">(3)拍项处于交割期内。</span></span></span></span></div>
+<div align="center"><span style="color: #cc6600"><strong><span><span style="font-family: 微软雅黑"><span style="font-size: 16px"><br />
+第四章&nbsp;其他</span></span></span></strong></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十五条&nbsp;文宝在线拍卖标准图片</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）所有上拍拍项文宝在线拍卖网均提供多方位在同一环境下拍摄或扫描的标准图片；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）文宝在线拍卖网认为所提供之标准图片能够对拍项颜色、品相、肉眼易见的瑕疵等做出如实反映，竞买人在出价前如有疑问应及时联系客服或亲临查看实物，买受人不得以拍项颜色不一致等主观因素作为退货理由；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（三）因显示器显示差异和数码照片色彩显示的局限，买受人应提前预知和接受实物和显示之间极轻微色差，且不得以此作为退货理由。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十六条&nbsp;保密责任</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">文宝在线拍卖网有义务为委托人、竞买人及买受人保守秘密（中华人民共和国法律另有规定的除外），并根据中华人民共和国法律和本规则维护委托人、竞买人、买受人的正当权益不受侵害。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十七条&nbsp;修改与解释权</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（一）文宝在线拍卖网有依据客观情况对规则进行不定期修改与补充的权利，新的条款会及时在网站公布，所有会员及委托送拍人应定期浏览本规则，以及时了解变更；</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">（二）文宝在线拍卖网保留对本规则及所有条款的最终解释权。</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">第十八条&nbsp;启用日期</span></span></span></span></div>
+<div align="left"><span style="color: #cc6600"><span><span style="font-family: 微软雅黑"><span style="font-size: 16px">本规则自<span>2014年&nbsp;5月&nbsp;1日起启用。</span></span></span></span></span></div></div>
+<br/>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">try{Dd('webpage_8').className='left_menu_on';}catch(e){}</script>
+<div id="floatTips" style="position:fixed;_position:absolute;padding: 3px;top: 150px;right: 125px;width: 30px;height: 300px;z-index:999;display:;">
+  <div id="serviceCenter">
+    <div class="sc_header"> <font style="float:left;margin:6px 0 0 10px">客服中心</font> <a href="javascript:;" title="关闭" style="width:15px;height:16px;display:block;margin:7px 0 0 45px;float:left;" onclick="document.getElementById('floatTips').style.display='none'"></a> </div>
+    <ul class="sc_ul" id="sc_ul">
+      <li id="sc_0">
+        <h3><font class="li_down" id="sc_pre"></font><font style="float:left;margin:8px 0 0 9px;font-weight:700;">拍前咨询</font></h3>
+        <div style="display:block;height:144px; line-height:22px;" id="sc_yes_sale">   <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=443728453&site=qq&menu=yes"  style="float:right;cursor:pointer;position:relative;top:8px;left:-20px;"  ><img src='http://www.wenbaozaixian.com/skin/default/image/wenbao/counseling_style_52.png' /></a>  <br />
+<br />
+&nbsp;服务热线：<br />
+&nbsp;<font style="color:#990000"><strong>400-068-3258</strong></font>
+</div>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+</div>
+<script>
+var scLiObjs=document.getElementById("sc_ul").getElementsByTagName("li");
+for(var i = 0 ; i<scLiObjs.length;i++){
+scLiObjs[i].onclick=function (){
+var liObjs = this.parentNode.getElementsByTagName("li"); //获取父UL节点 LI标签们
+for (var j=0;j<liObjs.length;j++){
+if (liObjs[j]==this){
+this.getElementsByTagName("font")[0].className = "li_down";
+this.getElementsByTagName("div")[0].style.display="block";
+}else{
+liObjs[j].getElementsByTagName("font")[0].className = "li_left";
+liObjs[j].getElementsByTagName("div")[0].style.display="none";
+}
+}
+
+}
+}
+  
+ 
+//<![CDATA[  
+var tips; var theTop = 96/*这是默认高度,越大越往下*/; var old = theTop;
+function initFloatTips() {
+tips = document.getElementById('floatTips');
+moveTips();
+};
+function moveTips() {
+var tt = 50;
+if (window.innerHeight) {
+pos = window.pageYOffset
+}
+else if (document.documentElement && document.documentElement.scrollTop) {
+pos = document.documentElement.scrollTop
+}
+else if (document.body) {
+pos = document.body.scrollTop;
+}
+pos = pos - tips.offsetTop + theTop;
+pos = tips.offsetTop + pos / 10;
+if (pos < theTop) pos = theTop;
+if (pos != old) {
+tips.style.top = pos + "px";
+tt = 10;
+}
+old = pos;
+setTimeout(moveTips, tt);
+}
+//!]]> 
+if(navigator.appVersion.indexOf("MSIE 6")>-1){
+var tmptips = document.getElementById('floatTips')
+//tmptips.style.cssText="display:absolute;top:10px;"
+
+initFloatTips()
+}
+
+slideAd('ZhujiwuTopAd',8); //控制顶部浮动广告
+
+</script>
+<div style="clear:both"></div>
+<div class="footer"><a href="http://www.wenbaozaixian.com/">网站首页</a>  | <a href="http://www.wenbaozaixian.com/about/index.html">关于我们</a> 
+| <a href="http://www.wenbaozaixian.com/about/contact.html">联系方式</a> 
+| <a href="http://www.wenbaozaixian.com/about/agreement.html">使用协议</a> 
+| <a href="http://www.wenbaozaixian.com/about/copyright.html">版权隐私</a> 
+ <br />
+ 工作时间:周一至周五:9:00-20:00 ；周六、日:9:00-18:00 ；客服咨询：400-068-3258；如需来公司洽谈业务，请提前两天（48小时）电话预约 服务热线:13862328525<br />Copyright 2014 版权所有 wenbaozaixian.com<a href="http://www.miibeian.gov.cn/" target="_blank"> 苏ICP备14028052号 </a>技术支持：<a href="http://www.jssdw.com" target="_blank">仕德伟科技</a></div>
+ 
+<div id="back2top" class="back2top"><a href="javascript:void(0);" title="返回顶部">&nbsp;</a></div>
+<script type="text/javascript">
+show_task('moduleid=3&html=webpage&itemid=8');
+$(function(){$("img").lazyload();});$('#back2top').click(function() {
+$("html, body").animate({scrollTop:0}, 200);
+});
+</script>

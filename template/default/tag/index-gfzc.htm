@@ -1,0 +1,53 @@
+<script type="text/javascript" src="{DT_STATIC}file/script/imagePreview.js"></script>
+<style>
+	#imgpreview {
+		background: #333333;
+		border: 1px solid #CCCCCC;
+		color: #FFFFFF;
+		display: none;
+		padding: 5px;
+		position: absolute;
+		z-index: 100;
+	}
+	.demo { margin-left: 50px; }
+	.demo a{ cursor: pointer; }
+	.demo fieldset{ width:240px; display: block; margin-top: 10px; }
+</style>
+<script type="text/javascript">
+	$().ready(function(){
+		$(".imgPreview").imagePreview();
+	});
+</script>
+
+<?php 
+	$query = $db->query("SELECT * FROM `{$db->pre}type` WHERE `item` LIKE 'auction%'");
+	while ($row = $db->fetch_array($query)) { 
+		$mycat 	= $row['typeid'];
+		$nums	= $db->get_one("SELECT count(*) as nums, sum(hits) as hits, min(fromtime) as fromtime, min(price) as price, max(totime) as totime, username FROM `{$db->pre}auction` WHERE mycatid='".$mycat."'");
+		$tmpArr	= $db->get_one("SELECT company FROM `{$db->pre}member` WHERE username='".$nums['username']."'");
+		$row['nums'] 		= $nums['nums'];		//专场内拍品数量
+		$row['name']		= $tmpArr['company'];   //商铺名称
+		$row['hits'] 		= $nums['hits'];		//竞拍数
+		$row['fromtime'] 	= $nums['fromtime'];	//竞拍发布时间
+		$row['totime']		= $nums['totime'];		//竞拍结束时间
+		$row['price']		= $nums['price'];		//专场起拍价
+		$row['linkurl']		= "index.php?homepage=".$nums['username']."&typeid=".$mycat;	
+		$listArr[] 			= $row; 
+	}
+ ?>
+
+{loop $listArr $k $v}
+{if $v[name]}
+<li>
+	<table width="718" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+	    <td width="217" height="28"><a href="<?php echo $v['linkurl']; ?>">{dsubstr($v[typename], 36, '...')}</a></td>
+	    <td width="111">{$v[name]}</td>
+	    <td width="101">￥{$v[price]}</td>
+	    <td width="158">{timetodate($v[fromtime], $datetype)} 开拍</td>
+	    <td width="131">出价{$v[hits]}次 </td>
+	  </tr>
+	</table>
+</li>
+{/if}
+{/loop}

@@ -1,0 +1,33 @@
+<?php 
+	$COM['user']['regtime'] 	= date('Y-m-d',$COM['user']['regtime']);
+	$COM['user']['logintime'] 	= date('Y-m-d',$COM['user']['logintime']);
+
+ ?>
+
+<div class="side_head"><div><strong>第三方信息</strong></div></div>
+<div class="side_body">
+<ul>
+	<li>名称：{$COM[company]}</li>
+	<li>
+		资料认证：
+		<!--
+		{if $COM[vcompany]}&nbsp;<img src="{$MODULE[2][linkurl]}image/v_company.gif" width="16" height="16" align="absmiddle" title="资料通过工商认证"/>{/if}
+		-->
+		{if $COM[vtruename]}&nbsp;<img src="{$MODULE[2][linkurl]}image/v_truename.gif" width="16" height="16" align="absmiddle" title="资料通过实名认证"/>{/if}
+		{if $COM[vbank]}&nbsp;<img src="{$MODULE[2][linkurl]}image/v_bank.gif" width="16" height="16" align="absmiddle" title="资料通过银行帐号认证"/>{/if}
+		{if $COM[vmobile]}&nbsp;<img src="{$MODULE[2][linkurl]}image/v_mobile.gif" width="16" height="16" align="absmiddle" title="资料通过手机认证"/>{/if}
+		{if $COM[vemail]}&nbsp;<img src="{$MODULE[2][linkurl]}image/v_email.gif" width="16" height="16" align="absmiddle" title="资料通过邮件认证"/>{/if}
+		{if $COM[validated]}&nbsp;<img src="{DT_SKIN}image/check_right.gif" align="absmiddle"/> 企业资料通过{$COM[validator]}认证{/if}		
+	</li>	
+	<li>信誉：<span style="color:red;">{$COM[user][credit]}</span></li>
+	<li>地区：<?php echo area_pos($COM['user']['areaid'], ' '); ?></li>
+	{if $COM[truename]}<li>联系人：{$COM[truename]}</li>{/if}
+	<!--
+	{if $COM[type]}<li>类型：{$COM[type]}</li>{/if}
+	
+	{if $COM[regyear]}<li title="{$COM[regyear]}">注册年份：{$COM[regyear]}</li>{/if}
+	{if $COM[user][regtime]}<li title="{$COM[user][regtime]}">加入文宝时间：{$COM[user][regtime]}</li>{/if}
+	-->	
+	{if $COM[user][logintime]}<li title="{$COM[user][logintime]}">最后登陆时间：{$COM[user][logintime]}</li>{/if}
+</ul>
+</div>

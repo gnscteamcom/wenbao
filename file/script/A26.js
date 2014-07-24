@@ -1,0 +1,1 @@
+document.write('<img src="http://www.wenbaozaixian.com/file/upload/201407/19/13-28-43-50-1.jpg" width="245" height="96" alt=""/>');

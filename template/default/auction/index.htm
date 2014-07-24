@@ -1,0 +1,51 @@
+{template 'header'}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}stylee.css"/>
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}{$module}.css"/>
+<div class="m">
+	<div class="left_box">
+		<div class="pos">当前位置: <a href="{$MODULE[1][linkurl]}">首页</a>
+		&raquo; <a href="{$MOD[linkurl]}">{$MOD[name]}</a>
+		{if $catid}&raquo; {cat_pos($CAT, ' &raquo; ')}{/if}
+		</div>
+		<div class="category">
+			<p><img src="{DT_SKIN}image/arrow.gif" width="17" height="12" alt=""/> <strong>按分类浏览</strong></p>
+			<div>
+			<table width="100%" cellpadding="3">
+			{loop $maincat $k $v}
+			{if $k%$MOD[page_subcat]==0}<tr>{/if}
+			<td><a href="{$MOD[linkurl]}{$v[linkurl]}">{set_style($v[catname],$v[style])}</a>{if !$cityid} <span class="f_gray px10">({$v[item]})</span>{/if}</td>
+			{if $k%$MOD[page_subcat]==($MOD[page_subcat]-1)}</tr>{/if}
+			{/loop}
+			</table>
+			</div>
+		</div>	
+		<div class="type">
+		<a href="{$MOD[linkurl]}" class="{if $zhuanchang==99}type_1{else}type_2{/if}">全部</a>
+		<?
+		$TYPE = $db->get_one("SELECT * FROM `{$db->pre}fields` WHERE `itemid`=2");
+		$TYPE=explode("*",$TYPE['option_value']);
+		$dtype = $zhuanchang != 99 ? " AND zhuanchang=$zhuanchang" : '';
+		?>
+		{loop $TYPE $k $v}
+		<?
+		$TYPE1=explode("|",$v);
+		?>
+		<a href="javascript:Go('{$MOD[linkurl]}{rewrite('index.php?zhuanchang='.$TYPE1[0].'&catid='.$catid)}');" class="{if $zhuanchang==$TYPE1[0]}type_1{else}type_2{/if}">{$TYPE1[1]}</a>
+		{/loop}
+		</div>	
+		<div class="tool">
+
+</div>
+		<?php if ($_GET['sta'] == 'finish'){ ?>
+			<!--{tag("moduleid=$moduleid&condition=auction_status!=0$dtype&catid=$catid&areaid=$cityid&pagesize=15&page=$page&showpage=1&width=250&height=180&cols=3&datetype=5&order=".$MOD[order]."&target=_blank&lazy=$lazy&template=list-auction")}-->
+		<?php }elseif ($_GET['sta'] == 'soon'){ 
+		$nowtime=time();
+		?>
+			<!--{tag("moduleid=$moduleid&condition=auction_status!=0 and totime>$nowtime and process<>2$dtype&catid=$catid&areaid=$cityid&pagesize=15&page=$page&showpage=1&width=250&height=180&cols=3&datetype=5&order=totime asc,addtime desc&target=_blank&lazy=$lazy&template=list-auction")}-->
+		<?php }else{ ?>
+			<!--{tag("moduleid=$moduleid&condition=status=3$dtype&catid=$catid&areaid=$cityid&pagesize=15&page=$page&showpage=1&width=250&height=180&cols=3&datetype=5&order=".$MOD[order]."&target=_blank&lazy=$lazy&template=list-auction")}-->
+		<?php } ?>
+		
+	</div>
+</div>
+{template 'footer'}

@@ -1,0 +1,79 @@
+
+.sc_header {
+	background:url('header_bg.gif') no-repeat;
+	width:137px;
+	height:29px;
+	color:#fff;
+	font-size:14px;
+	font-weight:700;
+	font-family:"宋体"
+}
+.sc_ul {
+	border-left:1px solid #dbdbdb;
+	border-right:1px solid #dbdbdb;
+	border-bottom:1px solid #dbdbdb;
+	width:135px;
+	float:left;
+	color:#656565;
+	font-size:12px;
+}
+.sc_ul li h3 {
+	background:url('li_bg.gif') repeat-x;
+	height:30px;
+	cursor:pointer;
+	font-weight:normal;
+	font-size:12px;
+	float:left;
+	width:135px;
+}
+.sc_ul li div {
+	background:url('con_bg.gif') repeat-x;
+	height:154px;
+	display:none;
+	font-family:"宋体";
+	float:left;
+	width:135px;
+}
+.sc_ul .line_top {
+	border-top:1px solid #dbdbdb;
+	float:left;
+	width:135px;
+}
+.sc_ul .li_left {
+	background:url('li_left.gif') no-repeat;
+	width:7px;
+	height:7px;
+	display:block;
+	float:left;
+	margin-top:12px;
+	margin-left:8px;
+}
+.sc_ul .li_down {
+	background:url('li_down.gif') no-repeat;
+	width:7px;
+	height:7px;
+	display:block;
+	float:left;
+	margin-top:13px;
+	margin-left:8px;
+}
+.sc_ul .sc_intro {
+	background:url('intro_bg.gif') no-repeat;
+	width:119px;
+	height:22px;
+	color:#fedcc0;
+	display:block;
+	float:left;
+	margin-left:8px;
+	margin-bottom:8px;
+}
+.sc_ul .sc_reset {
+	background:url('reset_xs.gif') no-repeat;
+	width:119px;
+	height:22px;
+	color:#fedcc0;
+	display:block;
+	float:left;
+	margin-left:8px;
+	margin-bottom:8px;
+}
